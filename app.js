@@ -12,7 +12,6 @@ const slider = document.querySelector('input');
 
 const songs = [
     {name: "In My Feelings", artist: "Drake", image: "images/drake.jpg", song: "media/imf.flac"},
-    {name: "Love Story", artist: "Taylor Swift", image: "images/taylor.jpg", song: "media/lovestory.flac"},
     {name: "Bitterlove", artist: "Ardhito Pramono", image: "images/ardhito.jpg", song: "media/bitterlove.flac"},
     {name: "At My Worst", artist: "Pink Sweat$", image: "images/pinksweat.jpg", song: "media/amw.flac"}
 ];
