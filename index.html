@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steven's Playlist</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
+    crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="artist-image">
+            <!-- <img src="images/drake.jpg" alt="Drake"> -->
+        </div>
+        <div class="duration">
+            <input type="range" min="0" max="100" value="0" onchange="changeDuration()">
+            <div class="time-lapse">
+                <p class="play-time">0.00</p>
+                <p class="total-time">3.38</p>
+            </div>
+        </div>
+        <div class="title">
+            <p class="song-name">In My Feelings</p>
+            <p class="artist-name">Drake</p>
+        </div>
+        <div class="action">
+            <button class="previous" onclick="previousTrack()"><i class="fa fa-backward" aria-hidden="true"></i></button>
+            <button class="play-pause" onclick="playPause()"><i class="fa fa-play play-transform" aria-hidden="true"></i></button>
+            <button class="next" onclick="nextTrack()"><i class="fa fa-forward" aria-hidden="true"></i></button>
+        </div>
+    </div>
+
+    <audio preload="metadata">
+        <source src="media/imf.flac" type="audio/flac">
+    </audio>
+    
+    <script src="app.js"></script>
+</body>
+</html>

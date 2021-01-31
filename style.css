@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(19, 22, 70, .8), rgba(100, 89, 163, 0.7));
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .2);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, .2);
+}
+
+.artist-image {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-image: url(images/drake.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 1rem;
+}
+
+.duration input {
+    -webkit-appearance: none;
+    outline: none;
+    height: 2px;
+    width: 12rem;
+    background-color: black;
+    cursor: pointer;
+}
+
+.duration input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 2px;
+    width: 10px;
+    /* transform: translateX(-100%); */
+    background-color: white;
+    cursor: pointer;
+}
+
+.time-lapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    margin: 1rem;
+}
+
+.title p {
+    text-align: center;
+}
+
+.action .play-pause {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid rgb(240, 232, 232);
+    padding: 20px;
+}
+
+.play-transform {
+    transform: translateX(1px);
+}
+
+.action button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem .8rem;
+    color: rgb(240, 232, 232);
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.action button:hover {
+    opacity: .8;
+}
